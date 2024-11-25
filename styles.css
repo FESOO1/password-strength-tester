@@ -10,3 +10,22 @@
     box-sizing: border-box;
     font-family: var(--f-parkinsans);
 }
+
+body {
+    background-color: rgb(16,16,18);
+}
+
+/* CONTAINER */
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+}
+
+/* INPUT */
+
+/* OUTPUT */
