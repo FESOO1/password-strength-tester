@@ -23,9 +23,91 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    row-gap: 10px;
+    row-gap: 40px;
 }
 
 /* INPUT */
 
+.input {
+    width: 600px;
+    height: 60px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    background-color: rgb(20,20,22);
+    overflow: hidden;
+    border-radius: 0.5rem;
+    border-top: 1px solid rgba(255,255,255,0.05);
+    border-bottom: 1px solid rgba(255,255,255,0.01);
+}
+
+.input-itself {
+    background-color: transparent;
+    outline: none;
+    border: 0;
+    padding-inline: 20px;
+    color: white;
+    font-size: 1rem;
+}
+
+.input-button {
+    border: 0;
+    background-color: rgb(40,40,42);
+    padding-inline: 20px;
+    font-size: 1rem;
+    color: white;
+    cursor: pointer;
+}
+
+.input-button:hover {
+    background-color: rgb(50,50,52);
+}
+
 /* OUTPUT */
+
+.output {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    border: 0;
+    background-color: rgb(13,13,15);
+    border: 1px solid rgba(255,255,255,0.01);
+    border-radius: 0.5rem;
+    padding-inline: 40px;
+    padding-block: 20px 25px;
+}
+
+.output-header {
+    color: white;
+    text-align: center;
+}
+
+/* OUTPUT ITSELF */
+
+.output-itself {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+/* OUTPUT ITSELF INDICATOR */
+
+.output-itself-indicator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.output-itself-indicator-svg-secure {
+    color: rgb(30, 255, 0);
+}
+
+.output-itself-indicator-svg-not-secure {
+    color: red;
+    display: none;
+}
+
+.output-itself-requirement {
+    color: white;
+    font-weight: 300;
+}
